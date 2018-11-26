@@ -3,7 +3,7 @@
  */
 import React, { Component } from 'react';
 
-class Button extends Component {
+class Increament extends Component {
         render(){
             return (
                 <button onClick={this.props.onCounterUpdate}>
@@ -13,4 +13,4 @@ class Button extends Component {
         }
 }
 
-export default Button;
+export default Increament;

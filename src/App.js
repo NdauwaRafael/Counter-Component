@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import Button from './components/Button'
+import Increament from './components/Increament'
 import Result from './components/Result';
 class App extends Component {
   state = {
@@ -14,7 +14,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Button onCounterUpdate={this.increamentCounter}/>
+        <Increament onCounterUpdate={this.increamentCounter}/>
         <Result counter={this.state.counter}/>
       </div>
     );
