@@ -3,6 +3,7 @@ import './App.css';
 import Increament from './components/Increament'
 import Decreament from './components/Decreament'
 import Result from './components/Result';
+import Reset from './components/Reset';
 
 class App extends Component {
     state = {
@@ -19,6 +20,12 @@ class App extends Component {
         }))
     };
 
+    resetCounter = ()=>{
+        this.setState({
+            counter: 0
+        });
+    };
+
     render() {
         return (
             <div className="App">
@@ -31,6 +38,8 @@ class App extends Component {
                 <Decreament decreamentValue={2} onCounterDecreament={this.decreamentCounter}/>
                 <Decreament decreamentValue={5} onCounterDecreament={this.decreamentCounter}/>
                 <Decreament decreamentValue={10} onCounterDecreament={this.decreamentCounter}/>
+                <br/>
+                <Reset onResetCounter={this.resetCounter}/>
                 <Result counter={this.state.counter}/>
             </div>
         );
