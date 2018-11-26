@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import Button from './components/button'
-
+import Button from './components/Button'
+import Result from './components/Result';
 class App extends Component {
   state = {
     counter: 0
@@ -15,6 +15,7 @@ class App extends Component {
     return (
       <div className="App">
         <Button onCounterUpdate={this.increamentCounter}/>
+        <Result counter={this.state.counter}/>
       </div>
     );
   }

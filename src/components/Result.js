@@ -4,6 +4,8 @@
 import React from 'react';
 const Result = (props)=>{
     return (
-        <div>....</div>
+        <div>{props.counter}</div>
     );
-}
+};
+
+export default Result;
