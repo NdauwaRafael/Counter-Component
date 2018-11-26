@@ -4,9 +4,15 @@
 import React, {Component} from 'react';
 
 class Decreament extends Component {
-    render(){
+    handleClick = () => {
+        this.props.onCounterDecreament(this.props.decreamentValue)
+    };
+
+    render() {
         return (
-            <button onClick={this.props.onCounterDecreament}>-1</button>
+            <button onClick={this.handleClick}>
+                -{this.props.decreamentValue}
+            </button>
         )
     }
 }
