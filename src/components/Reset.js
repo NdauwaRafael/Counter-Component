@@ -11,4 +11,5 @@ class Reset extends Component {
             </button>
         )
     }
-}
+};
+export  default  Reset;
